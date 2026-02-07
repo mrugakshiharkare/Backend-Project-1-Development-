@@ -14,6 +14,7 @@ def home():
     upper_name = user_name.upper()
     
     return f"<h1>Hello, {upper_name}!</h1><p>Welcome to the Upper Case Home Page.</p>"
+    
 # ---------------- REGEX MATCHER ROUTE ----------------
 @app.route('/regex', methods=['GET', 'POST'])
 def regex_matcher():
@@ -38,5 +39,6 @@ def regex_matcher():
 # S4: Run the Application:
 if __name__ == '__main__':
     app.run(debug = True)
+
 
 
