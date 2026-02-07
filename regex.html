@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regex Matcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1> Regex Matcher Tool</h1>
+
+    <form method="POST">
+        <label>Test String:</label><br>
+        <textarea name="test_string" required></textarea><br><br>
+
+        <label>Regular Expression:</label><br>
+        <input type="text" name="regex_pattern" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if error %}
+        <p style="color:red;"><b>{{ error }}</b></p>
+    {% endif %}
+
+    {% if matches %}
+        <h2>Matched Results </h2>
+        <ul>
+            {% for match in matches %}
+                <li>{{ match }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</body>
+</html>
