@@ -38,8 +38,8 @@ http://127.0.0.1:5000/regex
 
 #### 📷 `Output`
 
-The application displays all matching patterns found in the test string
-based on the provided regular expression.
+- The application displays all matching patterns found in the test string based on the provided regular expression.
+- You can refer https://github.com/mrugakshiharkare/Backend-Project-1-Development-/blob/main/Backend-Project-1-Development.png for reference of the output
 
 #### ✨ `Learning Outcome`
 
